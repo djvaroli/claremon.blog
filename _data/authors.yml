@@ -1,0 +1,14 @@
+Daniel Varoli:
+  name        : "Daniel Varoli"
+  bio         : "They don't build'em like this anymore"
+  avatar      : "/assets/images/author_avatar_daniel.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:daniel.varoli@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://twitter.com/extravagantman"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/djvaroli"

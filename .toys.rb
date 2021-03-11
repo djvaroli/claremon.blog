@@ -1,0 +1,35 @@
+LOCAL_IMAGE = "claremon-blog"
+PROJECT = "claremon-blog"
+SERVICE = "claremon-blog"
+
+
+tool "run-local" do
+    flag :no_cache
+    include :exec, exit_on_nonzero_status: true
+    def run
+      cache_args = no_cache ? ["--pull", "--no-cache"] : []
+      exec ["docker", "build"] + cache_args +
+           ["-t", LOCAL_IMAGE, "-f", "_build/Dockerfile", "."]
+      puts "Running on http://localhost:8080"
+      exec ["docker", "run", "--rm", "-it", "-p", "8080:8080", LOCAL_IMAGE]
+    end
+  end
+
+
+tool "deploy" do
+    optional_arg :tag
+    def run
+        if tag.nil?
+            puts "No tag specified. Using current git commit hash as tag"
+            set :tag, `git rev-parse HEAD`
+        end
+        image = "gcr.io/#{PROJECT}/#{SERVICE}:#{tag}"
+        exec ["gcloud", "builds", "submit", "--project", PROJECT,
+        "--config", "_build/cloudbuild.yaml",
+        "--substitutions", "_IMAGE=#{image}"]
+        exec ["gcloud", "beta", "run", "deploy", SERVICE,
+        "--project", PROJECT, "--platform", "managed",
+        "--region", "us-central1", "--allow-unauthenticated",
+        "--image", image, "--concurrency", "80"]
+    end 
+end

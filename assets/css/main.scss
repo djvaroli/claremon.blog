@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+a { 
+    color: #000;
+    text-decoration: none; 
+    &:visited {
+        color: #333;
+    }
+    &:hover {
+        color: #800080
+    }
+}
+
+.greedy-nav .visible-links a:before{
+    background: #800080;
+}
