@@ -18,18 +18,25 @@ tool "run-local" do
 
 tool "deploy" do
     optional_arg :tag
+    include :exec, exit_on_nonzero_status: true
     def run
         if tag.nil?
-            puts "No tag specified. Using current git commit hash as tag"
-            set :tag, `git rev-parse HEAD`
+          tag = `git rev-parse HEAD`
+          puts "Using current commit hash for tag: #{tag}"
         end
         image = "gcr.io/#{PROJECT}/#{SERVICE}:#{tag}"
-        exec ["gcloud", "builds", "submit", "--project", PROJECT,
-        "--config", "_build/cloudbuild.yaml",
+        exec ["gcloud", "builds", "submit", "--config", "_build/cloudbuild.yaml", 
         "--substitutions", "_IMAGE=#{image}"]
         exec ["gcloud", "beta", "run", "deploy", SERVICE,
-        "--project", PROJECT, "--platform", "managed",
-        "--region", "us-central1", "--allow-unauthenticated",
-        "--image", image, "--concurrency", "80"]
+        "--platform", "managed", "--region", "us-central1", 
+        "--allow-unauthenticated", "--image", image, "--concurrency", "80"]
     end 
+end
+
+tool "greet" do
+  desc "My First Tool!"
+  flag :whom, default: "world"
+  def run
+      puts "Hello #{whom}"
+  end
 end

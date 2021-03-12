@@ -8,6 +8,8 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+$fancy-purple-color: #800080;
+
 a { 
     color: #000;
     text-decoration: none; 
@@ -15,10 +17,10 @@ a {
         color: #333;
     }
     &:hover {
-        color: #800080
+        color: $fancy-purple-color
     }
 }
 
 .greedy-nav .visible-links a:before{
-    background: #800080;
+    background: $fancy-purple-color;
 }
