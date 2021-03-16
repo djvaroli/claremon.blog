@@ -10,14 +10,11 @@ jobs:
     steps:
     - name: Checkout master
       uses: actions/checkout@master
-    
-    - name: Echo commit hash with script
-      run: |
-        bash echo_commit_hash.sh
-    
-    - name: Install Toys.rb
-      run: |
-        gem install toys
+
+    - name: Test Fake Secrets
+      run:
+        echo {{ secrets.GCP_PROJECT }}
+        echo {{ secrets.GCP_SERVICE }}
 #     # Setup gcloud CLI
 #     - name: Setup gcloud CLI
 #       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
