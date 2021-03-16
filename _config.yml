@@ -19,13 +19,30 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Claremon Blog
+subtitle: "Version 3.1"
 masthead_title: Claremon Blog
-email: daniel.varoli@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Claremon Blog - a place where tech, cooking, math and finance come together. Run by Daniel and Hissan.
+  Claremon Blog - handcrafted, artisanal blogs with a twist of lemon.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/images/masthead_icon.svg"
+
+# Site Author
+author:
+  name     : "Claremon Group"
+  avatar   : "/assets/images/masthead_icon.svg"
+  bio      : "Built by Claremon for Claremon"
+  location : "Boston, USA"
+  # links: 
+  #   - label: "Email"
+  #     icon: "fas fa-fw fa-envelope-square"
+  #     url: "mailto:daniel.varoli@gmail.com"
+  #   - label: "LinkedIn"
+  #     icon: "fab fa-fw fa-linkedin"
+  #     url: "https://www.linkedin.com/in/daniel-varoli-828797193/"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/djvaroli"
 
 # Build settings
 theme: minimal-mistakes-jekyll
