@@ -3,7 +3,8 @@ deploy_to_gcr () {
     GCP_SERVICE=$2
     tag=$(git rev-parse HEAD)
     image="gcr.io/$GCP_PROJECT/$GCP_SERVICE:$tag"
-    echo image
+    echo $image
+
 
     # gcloud builds submit --conifg _build/cloudbild.yaml --substitutions _IMAGE=$image
 
