@@ -1,4 +1,6 @@
 commit_hash=$(git rev-parse HEAD)
-ruby_version=$(ruby -v)
-echo $commit_hash
-echo $ruby_version
+
+function test_args () {
+    echo $1
+    echo $2
+}
