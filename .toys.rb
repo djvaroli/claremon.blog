@@ -40,3 +40,14 @@ tool "greet" do
       puts "Hello #{whom}"
   end
 end
+
+tool "qpush" do
+  desc "Quick git push"
+  optional_arg :message, default: "minor changes for quick push"
+  include :exec, exit_on_nonzero_status: true
+  def run
+    exec ["git", "add", "."]
+    exec ["git", "commit", "-m", message]
+    exec ["git", "push"]
+  end
+end
