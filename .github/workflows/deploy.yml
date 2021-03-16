@@ -13,8 +13,8 @@ jobs:
 
     - name: Test Fake Secrets
       run:
-        echo {{ secrets.GCP_PROJECT }}
-        echo {{ secrets.GCP_SERVICE }}
+        echo ${{ secrets.GCP_PROJECT }}
+        echo ${{ secrets.GCP_SERVICE }}
 #     # Setup gcloud CLI
 #     - name: Setup gcloud CLI
 #       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
