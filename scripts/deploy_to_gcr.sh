@@ -1,9 +1,10 @@
-commit_hash=$(git rev-parse HEAD)
+deploy_to_gcr () {
+    GCP_PROJECT = $1
+    GCP_SERVICE = $2
+    tag=$(git rev-parse HEAD)
 
-test_args () {
-    echo $1
-    echo $2
-    echo "Here I am!"
+    image = "gcr.io/$GCP_PROJECT/$GCP_SERVICE:$tag"
+    echo image
 }
 
 "$@"

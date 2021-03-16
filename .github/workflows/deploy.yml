@@ -13,7 +13,7 @@ jobs:
 
     - name: Test Fake Secrets
       run:
-        bash ./scripts/deploy_to_gcr.sh test_args ${{ secrets.GCP_PROJECT }} ${{ secrets.GCP_SERVICE }}
+        bash ./scripts/deploy_to_gcr.sh deploy_to_gcr ${{ secrets.GCP_PROJECT }} ${{ secrets.GCP_SERVICE }}
 #     # Setup gcloud CLI
 #     - name: Setup gcloud CLI
 #       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
