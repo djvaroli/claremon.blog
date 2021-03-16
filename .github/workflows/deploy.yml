@@ -14,7 +14,10 @@ jobs:
     - name: Echo commit hash with script
       run: |
         bash echo_commit_hash.sh
-      
+    
+    - name: Install Toys.rb
+      run: |
+        gem install toys
 #     # Setup gcloud CLI
 #     - name: Setup gcloud CLI
 #       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
