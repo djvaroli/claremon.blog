@@ -9,7 +9,7 @@ tool "run-local" do
     def run
       cache_args = no_cache ? ["--pull", "--no-cache"] : []
       exec ["docker", "build"] + cache_args +
-           ["-t", LOCAL_IMAGE, "-f", "_build/Dockerfile", "."]
+           ["-t", LOCAL_IMAGE, "-f", "gcp_build/Dockerfile", "."]
       puts "Running on http://localhost:8080"
       exec ["docker", "run", "--rm", "-it", "-p", "8080:8080", LOCAL_IMAGE]
     end
@@ -25,7 +25,7 @@ tool "deploy" do
           puts "Using current commit hash for tag: #{tag}"
         end
         image = "gcr.io/#{PROJECT}/#{SERVICE}:#{tag}"
-        exec ["gcloud", "builds", "submit", "--config", "_build/cloudbuild.yaml", 
+        exec ["gcloud", "builds", "submit", "--config", "gcp_build/cloudbuild.yaml", 
         "--substitutions", "_IMAGE=#{image}"]
         exec ["gcloud", "beta", "run", "deploy", SERVICE,
         "--platform", "managed", "--region", "us-central1", 
