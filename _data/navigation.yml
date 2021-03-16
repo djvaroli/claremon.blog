@@ -1,10 +1,10 @@
 main:
   # - title: "About Us"
   #   url: "/about/"
-  # - title: "Kitchen"
-  #   url: "/kitchen/"
+  - title: "Kitchen"
+    url: "/kitchen"
   - title: "Tech"
-    url: "/tech/"
+    url: "/tech"
   # - title: "Math/Science"
   #   url: "/math__sci/"
   # - title: "Finance/IB"

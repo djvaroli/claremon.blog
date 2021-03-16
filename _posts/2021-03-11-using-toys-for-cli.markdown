@@ -3,6 +3,7 @@ layout: single
 title:  "Using Toys.rb for Fun and Simple Command Line Interface"
 date:   2021-03-10 18:32:13 -0500
 categories: tech
+categories_label: tech
 author: Daniel Varoli
 classes: wide
 header:

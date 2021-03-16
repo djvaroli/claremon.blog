@@ -21,7 +21,7 @@ tool "deploy" do
     include :exec, exit_on_nonzero_status: true
     def run
         if tag.nil?
-          tag = `git rev-parse HEAD`
+          tag = `git rev-parse HEAD`[0..-2]
           puts "Using current commit hash for tag: #{tag}"
         end
         image = "gcr.io/#{PROJECT}/#{SERVICE}:#{tag}"
