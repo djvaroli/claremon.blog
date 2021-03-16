@@ -9,7 +9,7 @@ tool "run-local" do
     def run
       cache_args = no_cache ? ["--pull", "--no-cache"] : []
       exec ["docker", "build"] + cache_args +
-           ["-t", LOCAL_IMAGE, "-f", "gcp_build/Dockerfile", "."]
+           ["-t", LOCAL_IMAGE, "-f", "Dockerfile", "."]
       puts "Running on http://localhost:8080"
       exec ["docker", "run", "--rm", "-it", "-p", "8080:8080", LOCAL_IMAGE]
     end

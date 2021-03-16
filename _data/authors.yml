@@ -1,7 +1,7 @@
 Daniel Varoli:
   name        : "Daniel Varoli"
   bio         : "They don't build'em like this anymore"
-  avatar      : "/assets/images/author_avatar_daniel.jpg"
+  avatar      : "/assets/images/avatars/author_avatar_daniel.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

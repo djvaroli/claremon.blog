@@ -1,13 +1,14 @@
 ---
 layout: single
-title:  "Using Toys.rb for Fun and Simple Command Line Interface"
+title:  "Toys.rb - Making Command Line Interface Fun."
+excerpt: "I'm by no means the greatest programmer when it comes to using command line tools..."
 date:   2021-03-10 18:32:13 -0500
 categories: tech
 categories_label: tech
 author: Daniel Varoli
 classes: wide
 header:
-  overlay_image: /assets/images/ruby.jpg
+  overlay_image: /assets/images/post_headers/ruby.jpg
   overlay_filter: 0.6 # same as adding an opacity of 0.5 to a black background
 ---
 
