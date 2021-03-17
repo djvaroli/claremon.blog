@@ -9,7 +9,8 @@ author: Daniel Varoli
 classes: wide
 header:
   overlay_image: /assets/images/post_headers/ruby.jpg
-  overlay_filter: 0.6 # same as adding an opacity of 0.5 to a black background
+  overlay_filter: rgba(128, 0, 128, 0.2)
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 ---
 
 I'm by no means the greatest programmer when it comes to using command line tools. I know the basics like `ls`, `cd`, `touch` and so on, but writing bash scripts, especially anything that involves passing arguments is a pain for me. At times I will go with Python and use the `argparse` module, which has been helpful, but for some reason it doesn't feel rewarding. Well, yesterday I found something that makes me feel like a command line god. Introducing *[Toys](https://github.com/dazuma/toys)*.

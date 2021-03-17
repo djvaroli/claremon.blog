@@ -14,7 +14,7 @@ a {
     color: #000;
     text-decoration: none; 
     &:visited {
-        color: #333;
+        color: #777;
     }
     &:hover {
         color: $fancy-purple-color
@@ -26,5 +26,16 @@ a {
 }
 
 .page__hero--overlay {
-    padding: 5em 0;
+    padding: 5em 0 !important;
+}
+
+.list__item {
+    box-shadow: rgba(17, 17, 26, 0.15) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.archive__item-title {
+    margin-top: 0.25em;
 }

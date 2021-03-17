@@ -30,7 +30,7 @@ logo: "/assets/images/icons/masthead_icon.svg"
 # Site Author
 author:
   name     : "Claremon Group"
-  avatar   : "/assets/images/masthead_icon.svg"
+  avatar   : "/assets/images/icons/masthead_icon.svg"
   bio      : "Built by Claremon for Claremon"
   location : "Boston, USA"
   # links: 
