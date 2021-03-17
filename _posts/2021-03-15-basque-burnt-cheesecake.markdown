@@ -64,8 +64,8 @@ Essentially you want it to almost mold the inside of the cake pan.
 
 To be fair it's not very hard, especially if you have a stand mixer and it tastes amazing!
 
-Here's what ours looked like at the end.
+<!-- Here's what ours looked like at the end. -->
 
-![Should be a nice picture of a Basque Cheesecake here](../assets/images/post_images/jw_basque_cheesecake_final.jpg "Fancy Basque Cheesecake.")
+<!-- ![Should be a nice picture of a Basque Cheesecake here](/assets/images/post_headers/basque_cheesecake.png "Fancy Basque Cheesecake.") -->
 
 Bon Appétit!
