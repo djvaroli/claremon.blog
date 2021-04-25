@@ -46,7 +46,7 @@ I messed this one up the first time I tried to make it by adding the sugar after
 * Find a tall cake pan or some other container that you think works and place that into a large baking tray. You want the baking tray to have high sides since you are going to add water to the baking tray.
 * Make a circular cutout of parchment paper to fit the pan.
 * Pour cake mixture into the mold and then pour hot water into the baking tray.
-* Preheat oven to 160 Celcius (320 F)
+* Preheat oven to 170 Celcius (340 F)
 * Once ondo is at temp, bake for about 20 minutes
 * Open the oven, count to 5 then close the oven and lower temp to 110 Celcius (230 F)
 * Once time has elapsed, remove mold/pan from the oven give it a tap on all sides and slide the cake out onto a plate
