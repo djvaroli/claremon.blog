@@ -38,7 +38,7 @@ I messed this one up the first time I tried to make it by adding the sugar after
 * Add cake flour to the mixture, preferrable by running it through a sieve.
 * Mix until combined and velvety smooth (again)
 * Add the egg yolks and... you guessed it, mix again. Until combined
-* Place the egg whites in a bowl and beat until semi-foamy and semi-liquidy (If that's not vague)
+* Place the egg whites in a bowl, add the lemon juice and beat until semi-foamy and semi-liquidy (If that's not vague)
 * Add sugar in 3 batches, beating the eggwhites after each time.
 * At the end you want the eggwhites to form solid peaks when you remove the beaters.
 * Add a third of the egg-whites to your flour mixture and mix again, until combined
@@ -46,9 +46,9 @@ I messed this one up the first time I tried to make it by adding the sugar after
 * Find a tall cake pan or some other container that you think works and place that into a large baking tray. You want the baking tray to have high sides since you are going to add water to the baking tray.
 * Make a circular cutout of parchment paper to fit the pan.
 * Pour cake mixture into the mold and then pour hot water into the baking tray.
-* Preheat oven to 170 Celcius (340 F)
-* Once ondo is at temp, bake for about 20 minutes
-* Open the oven, count to 5 then close the oven and lower temp to 110 Celcius (230 F)
+* Preheat oven to 180 Celcius (360 F)
+* Once ondo is at temp, bake for about 20 minutes. Crucial step here is to make sure the cake actually rises, as for me it did not when I did this the first time (I did it at 160C, 340F).
+* Once the cake has risen and the top has some color to it, open the oven, count to 5 then close the oven and lower temp to 110 Celcius (230 F).
 * Once time has elapsed, remove mold/pan from the oven give it a tap on all sides and slide the cake out onto a plate
 * Remove the parchment paper on the bottom
 * As a finishing touch brush the top of the cake with some honey
